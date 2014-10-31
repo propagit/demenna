@@ -1,0 +1,18 @@
+/* CSS Document */
+
+html,
+body{
+	width:100%;	
+	margin:0;
+}
+body{
+	background-image:url(../img/core/bg-body.jpg);
+	background-repeat:repeat-x;
+	background-color:#fcfcfc	;
+}
+
+#landing-wrap{
+	width:603px;
+	margin:auto;
+	margin-top:8%;	
+}
