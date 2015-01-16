@@ -10,7 +10,16 @@ class Content extends CI_Controller {
 	
 	function index()
 	{
+		$this->load->view('common/header');
 		$this->load->view('home');
+		$this->load->view('common/footer');
+	}
+	
+	function about()
+	{
+		$this->load->view('common/header');
+		$this->load->view('about');
+		$this->load->view('common/footer');	
 	}
 	
 	

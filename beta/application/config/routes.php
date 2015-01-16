@@ -41,6 +41,17 @@
 $route['default_controller'] = "content";
 $route['404_override'] = '';
 
+$pages = array(
+			'about',
+			'service',
+			'fleet',
+			'projects',
+			'contact'
+		);
+foreach($pages as $page){
+	$route[$page] = "content/" . $page;	
+}
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

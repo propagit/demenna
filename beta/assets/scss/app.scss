@@ -1,0 +1,450 @@
+/* Scss Document */
+@import url(../bootstrap/css/bootstrap.min.css);
+@import url(../font-awesome/css/font-awesome.min.css);
+@import url(//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Raleway:400,100,200,300,500,600,700,800,900);
+
+
+/*
+	This is not a responsive website,
+	However it does breaks down into 992 or col-md screen size to accomade for smaller screen
+*/
+
+$lato: 'Lato', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+
+$text_blue:#184685;
+$text_yellow:#ffcd05;
+$text_white:#ffffff;
+
+$bg_blue:#0f3f80;
+$bg_dark_blue:#0d3973;
+$bg_yellow:#ffcc05;
+$bg_white:#ffffff;
+
+$nav_height:40px;
+$body_copy:15px;
+
+html,body,p{
+	font-size:$body_copy;
+	font-family:$raleway;
+	font-weight:400;	
+}
+
+body{
+	color:$text_blue;
+	background-image:url(../img/core/SmallTileXY.jpg);
+	background-repeat:repeat;
+}
+
+
+@mixin box-shadow{
+	-moz-box-shadow: 0px 0px 25px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 0px 25px rgba(0,0,0,0.7);
+	box-shadow: 0px 0px 25px rgba(0,0,0,0.7);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.70);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.70)";
+	zoom: 1;
+}
+
+@mixin btn($text_color){
+	width:205px;
+	height:45px;
+	color:$text_color;
+	background-color:$bg_blue;
+	text-transform:uppercase;
+	border-radius:0;
+	font-weight:700;
+	font-size:15px;
+	&:hover{
+		color:$text_color;
+	}
+}
+
+@mixin overlay{
+    background-color:rgb(0,0,0);
+    background-color: transparent\9;
+    background-color:rgba(0,0,0,0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf000000,endColorstr=#bf000000);
+    zoom: 1;
+}
+@mixin text_shadow{
+	text-shadow:1px 1px 5px #000000;	
+}
+@mixin box($bg_color){
+	background-color:$bg_color;
+	padding-bottom:10px;
+	h1,h3{
+		@include text_shadow;
+		text-align:center;
+	}	
+}
+#pattern{
+	background-image:url(../img/core/LargeTileX.jpg);
+	background-repeat:repeat-x;	
+	min-height: 490px;
+	width: 100%;
+	position:absolute;
+}
+h1,h2,h5{
+	font-family:$raleway;
+	text-transform:uppercase;	
+}
+h3{
+	font-family:$lato;	
+}
+
+h1{
+	font-weight:900;
+	font-size:44px;
+	color:$text_white;
+}
+h2{
+	font-weight:900;
+	font-size:34px;
+}
+h3{
+	color:$text_yellow;
+	font-weight:300;	
+	font-size:22px;
+	line-height:24px;
+}
+h4{
+	font-family:$raleway;
+	color:$text_blue;
+	font-size:18px	
+}
+h5{
+	color:$text_blue;
+	font-size:15px;
+	font-weight:700;
+}
+a{
+	color:$text_blue;
+	font-family:$raleway;
+	&:hover{
+		color:$text_blue;	
+	}
+}
+
+
+
+#wrapper{
+	position:relative;	
+}
+#header{
+	background-color:rgba(255,204,5,0.68);
+	height:173px;
+	width:100%;
+}
+#logo{
+	@include box-shadow;
+	background-color:$bg_yellow;	
+	margin:auto;
+	width:255px;
+	height:195px;
+	text-align:center;
+	line-height:195px;
+	position:relative;
+	z-index:2000;
+}
+#logo img{
+	
+}
+
+/* navs */
+
+#nav-wrap{
+	background-color:$bg_blue;	
+	margin-top:-62px;
+	height:$nav_height;
+}
+.nav-app{
+	text-transform:uppercase;
+	font-family:$raleway;
+	li:after{
+		content:"|";	
+		position: absolute;
+		margin-top: -34px;
+		color: #3f6599;
+		font-size:20px;
+	}
+	li:first-child:after{
+		content:"";
+	}
+	
+	li > a{
+		font-weight:800;
+		font-size:15px;
+		color:$text_white;	
+		padding:0;
+		min-width: 148px;
+		text-align: center;
+		line-height: $nav_height;
+		&:hover,
+		&:focus,
+		&.active{
+			color:$text_yellow;	
+			background-color:$bg_dark_blue;
+		}
+	}
+}
+
+/*buttons*/
+@each $btn,$text_color in (btn-white-txt,$text_white),(btn-yellow-txt,$text_yellow){
+	.#{$btn}{
+		@include btn($text_color);	
+	}
+}
+
+/*banner*/
+#banners{
+	 .item img{
+		width:100%;
+	 }
+	 .carousel-caption{
+		@include overlay;	
+		padding:17px 20px 20px 20px;
+		bottom:15%;
+		/*max-width:870px;*/
+		h1{
+			margin-top:0;	
+		}
+		h1,h3{
+			@include text_shadow;
+		}
+		h3{
+			margin-top:14px;
+			margin-bottom:20px;	
+		}
+	 }
+	 .carousel-indicators li{
+	 		width:18px;
+			height:18px;
+			border:none;
+			background-color:$bg_white;
+			margin:0 5px;
+			&.active{
+				background-color:$bg_yellow;
+			}
+	 }
+	 .banner-slide-btn{
+		@include overlay;
+		height: 41px;
+		display: block;
+		width: 41px;
+		position: absolute;
+		font-size: 20px;
+		line-height: 41px;
+		top: 45%;
+		.fa{
+			font-size:25px;	
+		}
+			 
+	 }
+	 a.right .banner-slide-btn{
+		right:0;	 
+	 }
+	 
+}
+.offset-top{
+	margin-top:20px;	
+}
+.app-container{
+	background-color:$bg_white;	
+	padding-bottom:75px;
+}
+.home-box{
+	text-align:center;
+	margin-top:17px;
+	padding-left:0;
+	padding-right:0;
+	h2,p{
+		text-align:center;	
+	}
+	p{
+		width:80%;
+		margin:16px auto 0;
+	}
+	img{
+		margin-bottom:10px;	
+	}
+	
+}
+hr{
+	float: left;
+	width: 100%;
+	border-top:1px solid #dde3ed;
+}
+.caption{
+	@include box($bg_blue);
+	margin-top:45px;
+}
+
+
+
+
+#footer{
+	.footer-box{
+		width:auto;
+		float:left;
+		padding-right:35px;
+		.fa-ul{
+			font-family:$raleway;
+			font-size:12px;
+			font-weight:700;	
+			margin-left:40px;
+			.fa{
+				text-align: left;
+				left: -40px;
+			}
+			.fa-bank{
+				font-size:15px;	
+			}
+			li > span{
+				min-width:72px;
+				display:inline-block;	
+			}
+			
+		}
+	}
+	.quick-links{
+		list-style:none;
+		width:600px;
+		margin:auto;
+		li{
+			float:left;
+			width:auto;
+			text-transform:uppercase;
+			&:after{
+				content:"|";	
+				font-size: 10px;
+				margin-top: 4px;
+				position: absolute;
+			}
+			&:last-child:after{
+				content:"";	
+			}
+			a{
+				font-size:12px;
+				font-weight:500;	
+				padding:0 10px;
+			}
+		}
+	}
+	p.copy-right{
+		text-align: center;
+		font-size: 12px;
+		padding-top: 10px;
+	}
+	
+}
+
+
+/*
+	Bootstrap Overwrides for Tablet and Mobile
+*/
+@mixin resize_font($full_size){
+	font-size:$full_size * 0.7;	
+}
+@media(max-width:991px){
+	#wrapper,
+	#pattern,
+	.container{
+		width:970px;	
+	}
+	h1{
+		@include resize_font(44px);	
+	}
+	h2{
+		@include resize_font(34px);		
+	}
+	h3{
+		@include resize_font(24px);		
+	}
+	.nav-app li > a{
+		min-width:110px;	
+	}
+	#banners{
+	 	.carousel-caption{
+			right:10%;
+			left:10%;
+			bottom:25%;
+	 	}
+	 
+	}
+	.home-box{
+		img{
+			width:100%;	
+		}
+	}
+	#footer{
+		.footer-box{
+			max-width:25%;	
+		}
+		.fa-ul{
+			li > span{
+				display:none !important;	
+			}
+		}
+	}
+}
+
+@media(min-width:992px) and (max-width:1200px){
+	.nav-app li > a{
+		min-width:110px;	
+	}	
+	#banners{
+	 	.carousel-caption{
+			right:10%;
+			left:10%;
+			bottom:25%;
+	 	}
+	 
+	}
+	.home-box{
+		img{
+			width:100%;	
+		}
+	}
+	#footer{
+		.footer-box{
+			max-width:25%;	
+		}
+		.fa-ul{
+			li > span{
+				display:none !important;	
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+/*helpers*/
+.clear{
+	clear:both;	
+}
+.pull{
+	float:right !important;	
+}
+.push{
+	float:left !important;	
+}
+.pull-text{
+	text-align:right;	
+}
+.center{
+	text-align:center;	
+}
+.remove-rt-gutter{
+	padding-right:0 !important;
+}
+.remove-gutters{
+	padding-left:0 !important;
+	padding-right:0 !important;	
+}
