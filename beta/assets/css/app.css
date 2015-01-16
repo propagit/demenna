@@ -16,6 +16,27 @@ body {
   background-image: url(../img/core/SmallTileXY.jpg);
   background-repeat: repeat; }
 
+p {
+  color: #184685; }
+
+.box-shadow, #logo {
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.70);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.70)";
+  zoom: 1; }
+
+.overlay, #banners .carousel-caption, #banners .banner-slide-btn, .gallery-img .view-gallery-btn {
+  background-color: black;
+  background-color: transparent\9;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf000000,endColorstr=#bf000000);
+  zoom: 1; }
+
+.text_shadow, #banners .carousel-caption h1, #banners .carousel-caption h3, .caption h1, .caption h3 {
+  text-shadow: 1px 1px 5px #000000; }
+
 #pattern {
   background-image: url(../img/core/LargeTileX.jpg);
   background-repeat: repeat-x;
@@ -23,7 +44,7 @@ body {
   width: 100%;
   position: absolute; }
 
-h1, h2, h5 {
+h1, h2, h5, h6 {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase; }
 
@@ -33,11 +54,13 @@ h3 {
 h1 {
   font-weight: 900;
   font-size: 44px;
+  line-height: 46px;
   color: white; }
 
 h2 {
   font-weight: 900;
-  font-size: 34px; }
+  font-size: 34px;
+  line-height: 36px; }
 
 h3 {
   color: #ffcd05;
@@ -52,8 +75,14 @@ h4 {
 
 h5 {
   color: #184685;
-  font-size: 15px;
-  font-weight: 700; }
+  font-size: 14px;
+  font-weight: 900; }
+
+h6 {
+  color: #184685;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px; }
 
 a {
   color: #184685;
@@ -70,12 +99,6 @@ a {
   width: 100%; }
 
 #logo {
-  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.70);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.70)";
-  zoom: 1;
   background-color: #ffcc05;
   margin: auto;
   width: 255px;
@@ -123,9 +146,12 @@ a {
   text-transform: uppercase;
   border-radius: 0;
   font-weight: 700;
-  font-size: 15px; }
-  .btn-white-txt:hover {
+  font-size: 15px;
+  line-height: 35px; }
+  .btn-white-txt:hover, .btn-white-txt:focus {
     color: white; }
+  .btn-white-txt .fa {
+    font-size: 18px; }
 
 .btn-yellow-txt {
   width: 205px;
@@ -135,26 +161,25 @@ a {
   text-transform: uppercase;
   border-radius: 0;
   font-weight: 700;
-  font-size: 15px; }
-  .btn-yellow-txt:hover {
+  font-size: 15px;
+  line-height: 35px; }
+  .btn-yellow-txt:hover, .btn-yellow-txt:focus {
     color: #ffcd05; }
+  .btn-yellow-txt .fa {
+    font-size: 18px; }
+
+.btn-sml {
+  width: 85px !important; }
 
 /*banner*/
 #banners .item img {
   width: 100%; }
 #banners .carousel-caption {
-  background-color: black;
-  background-color: transparent\9;
-  background-color: rgba(0, 0, 0, 0.5);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf000000,endColorstr=#bf000000);
-  zoom: 1;
   padding: 17px 20px 20px 20px;
   bottom: 15%;
   /*max-width:870px;*/ }
   #banners .carousel-caption h1 {
     margin-top: 0; }
-  #banners .carousel-caption h1, #banners .carousel-caption h3 {
-    text-shadow: 1px 1px 5px #000000; }
   #banners .carousel-caption h3 {
     margin-top: 14px;
     margin-bottom: 20px; }
@@ -167,11 +192,6 @@ a {
   #banners .carousel-indicators li.active {
     background-color: #ffcc05; }
 #banners .banner-slide-btn {
-  background-color: black;
-  background-color: transparent\9;
-  background-color: rgba(0, 0, 0, 0.5);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf000000,endColorstr=#bf000000);
-  zoom: 1;
   height: 41px;
   display: block;
   width: 41px;
@@ -188,8 +208,7 @@ a {
   margin-top: 20px; }
 
 .app-container {
-  background-color: white;
-  padding-bottom: 75px; }
+  background-color: white; }
 
 .home-box {
   text-align: center;
@@ -214,9 +233,79 @@ hr {
   padding-bottom: 10px;
   margin-top: 45px; }
   .caption h1, .caption h3 {
-    text-shadow: 1px 1px 5px #000000;
     text-align: center; }
 
+.secondary {
+  width: 860px;
+  margin: auto;
+  padding-top: 35px; }
+  .secondary p {
+    text-align: justify; }
+  .secondary ul {
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 80%; }
+    .secondary ul li {
+      padding-left: 20px;
+      padding-bottom: 30px; }
+  .secondary .btn-wrap {
+    padding-left: 15px;
+    padding-top: 5px; }
+    .secondary .btn-wrap .btn {
+      margin-right: 15px; }
+
+.gallery-box, .gallery-img, .gallery-desc {
+  min-height: 466px;
+  float: left;
+  padding-right: 20px;
+  padding-top: 8px; }
+
+.gallery-img {
+  padding-left: 10px;
+  width: 630px; }
+  .gallery-img img {
+    width: 100%; }
+  .gallery-img .view-gallery-btn {
+    width: 176px;
+    height: 45px;
+    margin: -45px auto 0;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    line-height: 45px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    cursor: pointer; }
+
+.gallery-desc {
+  width: 500px;
+  padding-left: 25px; }
+  .gallery-desc h2 {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 10px;
+    line-height: 39px; }
+  .gallery-desc .fa-ul {
+    margin-left: 25px;
+    margin-top: 15px; }
+    .gallery-desc .fa-ul li {
+      font-weight: 600; }
+    .gallery-desc .fa-ul .fa-li {
+      color: #828281; }
+    .gallery-desc .fa-ul li, .gallery-desc .fa-ul .fa-li {
+      line-height: 26px; }
+  .gallery-desc .gallery-btns {
+    margin-top: 85px; }
+  .gallery-desc button {
+    margin-right: 15px; }
+
+.app-multi-carousel h5 {
+  margin-top: 35px; }
+
+#footer .app-container {
+  padding-top: 75px; }
 #footer .footer-box {
   width: auto;
   float: left;

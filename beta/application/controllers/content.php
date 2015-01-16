@@ -22,6 +22,20 @@ class Content extends CI_Controller {
 		$this->load->view('common/footer');	
 	}
 	
+	function team()
+	{
+		$this->load->view('common/header');
+		$this->load->view('team');
+		$this->load->view('common/footer');		
+	}
+	
+	function fleet()
+	{
+		$this->load->view('common/header');
+		$this->load->view('fleet');
+		$this->load->view('common/footer');	
+	}
+	
 	
 	
 	

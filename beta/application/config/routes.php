@@ -46,7 +46,8 @@ $pages = array(
 			'service',
 			'fleet',
 			'projects',
-			'contact'
+			'contact',
+			'team'
 		);
 foreach($pages as $page){
 	$route[$page] = "content/" . $page;	

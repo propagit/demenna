@@ -5,7 +5,7 @@
                 	<img src="<?=base_url();?>assets/img/core/footerCranesLogo.jpg">
                 </div>
                 <div class="footer-box">
-                	<h5>Head Office</h5>
+                	<h6>Head Office</h6>
                 	<ul class="fa-ul">
                       <li><i class="fa-li fa fa-bank"></i>
                       	5 GREEN STREET THOMASTOWN<br>

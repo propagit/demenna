@@ -34,7 +34,7 @@
                             <li><a href="#">Service</a></li>
                         </ul>
                         <ul class="nav nav-pills nav-app pull">
-                            <li><a href="#">Fleet</a></li>
+                            <li><a href="<?=base_url();?>fleet">Fleet</a></li>
                             <li><a href="#">Projects</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -45,5 +45,3 @@
             
         </div>
     </header>
-    
-
