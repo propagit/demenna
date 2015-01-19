@@ -35,9 +35,9 @@ class Content extends CI_Controller {
 		
 		if($slug){
 		#if(1){
-			$this->load->view('list');
+			$this->load->view('feet/list');
 		}else{
-			$this->load->view('detail');
+			$this->load->view('fleet/detail');
 		}
 		$this->load->view('common/footer');	
 	}
