@@ -29,10 +29,16 @@ class Content extends CI_Controller {
 		$this->load->view('common/footer');		
 	}
 	
-	function fleet()
+	function fleet($slug = "")
 	{
 		$this->load->view('common/header');
-		$this->load->view('fleet');
+		
+		if($slug){
+		#if(1){
+			$this->load->view('list');
+		}else{
+			$this->load->view('detail');
+		}
 		$this->load->view('common/footer');	
 	}
 	

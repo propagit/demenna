@@ -51,6 +51,7 @@ $pages = array(
 		);
 foreach($pages as $page){
 	$route[$page] = "content/" . $page;	
+	$route[$page . '/(:any)'] = "content/" . $page . "/$1";	
 }
 
 
