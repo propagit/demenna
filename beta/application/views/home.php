@@ -66,10 +66,10 @@
     
     <!-- Controls -->
     <a class="left carousel-control" href="#banners" role="button" data-slide="prev">
-        <span class="banner-slide-btn"><i class="fa fa-angle-left"></i></span>
+        <span class="slide-btn"><i class="fa fa-angle-left"></i></span>
     </a>
     <a class="right carousel-control" href="#banners" role="button" data-slide="next">
-        <span class="banner-slide-btn"><i class="fa fa-angle-right"></i></span>
+        <span class="slide-btn"><i class="fa fa-angle-right"></i></span>
     </a>
     
 </div>

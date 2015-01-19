@@ -8,8 +8,14 @@
 <!-- bootstrap js-->
 <script type="text/javascript" src="<?=base_url();?>assets/bootstrap/js/bootstrap.min.js"></script>
 
+<!--lightbox js-->
+<script type="text/javascript" src="<?=base_url();?>assets/lightbox/js/lightbox.min.js"></script>
+
+
 <!--styles-->
 <link rel="stylesheet" href="<?=base_url();?>assets/css/app.css">
+
+
 
 
 

@@ -1,6 +1,7 @@
 /* Scss Document */
 @import url(../bootstrap/css/bootstrap.min.css);
 @import url(../font-awesome/css/font-awesome.min.css);
+@import url(../lightbox/css/lightbox.css);
 @import url(//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Raleway:400,100,200,300,500,600,700,800,900);
 
 
@@ -217,6 +218,29 @@ a{
 }
 
 /*banner*/
+.carousel{
+	.slide-btn{
+			@extend .overlay;
+			height: 41px;
+			display: block;
+			width: 41px;
+			position: absolute;
+			font-size: 20px;
+			line-height: 41px;
+			top: 45%;
+			.fa{
+				font-size:25px;	
+			}
+				 
+	}
+	a.right .slide-btn{
+		right:0;	 
+	}
+	.left,.right{
+		background-image:none;
+		background-color:transparent;
+	}
+}
 #banners{
 	 .item img{
 		width:100%;
@@ -246,23 +270,6 @@ a{
 			&.active{
 				background-color:$bg_yellow;
 			}
-	 }
-	 .banner-slide-btn{
-		@extend .overlay;
-		height: 41px;
-		display: block;
-		width: 41px;
-		position: absolute;
-		font-size: 20px;
-		line-height: 41px;
-		top: 45%;
-		.fa{
-			font-size:25px;	
-		}
-			 
-	 }
-	 a.right .banner-slide-btn{
-		right:0;	 
 	 }
 	 
 }
@@ -354,6 +361,9 @@ hr{
 		font-weight: 700;
 		cursor:pointer;	
 	}
+	a:hover{
+		text-decoration:none;
+	}
 }
 .gallery-desc{
 	@extend .gallery-box;
@@ -386,11 +396,34 @@ hr{
 	}
 	
 }
+/*Lightbox*/
+.lb-container{
+	padding:0;	
+}
 .app-multi-carousel{
 	h5{
-		margin-top:35px;	
+		margin-top:30px;	
+		padding-left:15px;
+	}
+	.carousel{
+		.item{
+			img{	
+				float: left;
+				max-width: 222px;
+				padding-right: 5px;
+			}
+			img:last-child{
+				padding-right:0;
+			}
+		}
+		.slide-btn{
+			top:35%;	
+		}
 	}
 }
+
+
+
 
 #footer{
 	.app-container{
@@ -453,10 +486,13 @@ hr{
 
 
 /*
-	Bootstrap Overwrides for Tablet and Mobile
+	Responsive 
 */
 @mixin resize_font($full_size){
 	font-size:$full_size * 0.7;	
+}
+@mixin resize_box($full_width){
+	width:$full_width * 0.80;	
 }
 @media(max-width:991px){
 	#wrapper,
@@ -489,6 +525,15 @@ hr{
 			width:100%;	
 		}
 	}
+	.gallery-img{
+		@include resize_box(630px);
+	}
+	.gallery-desc{
+		@include resize_box(500px);
+	}
+	.app-multi-carousel .carousel .item img{
+		max-width:182px;	
+	}
 	#footer{
 		.footer-box{
 			max-width:25%;	
@@ -517,6 +562,20 @@ hr{
 		img{
 			width:100%;	
 		}
+	}
+	.secondary-banner{
+		img{
+			max-width:920px;
+		}
+	}
+	.gallery-img{
+		@include resize_box(630px);
+	}
+	.gallery-desc{
+		@include resize_box(500px);
+	}
+	.app-multi-carousel .carousel .item img{
+		max-width:182px;	
 	}
 	#footer{
 		.footer-box{
