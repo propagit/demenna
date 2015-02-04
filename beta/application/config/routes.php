@@ -39,7 +39,7 @@
 */
 
 $route['default_controller'] = "content";
-$route['404_override'] = '';
+$route['404_override'] = 'content/app_404';
 
 $pages = array(
 			'about',

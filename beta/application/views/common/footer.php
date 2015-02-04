@@ -29,13 +29,13 @@
                 <div class="clear"></div>
                 
                 <ul class="quick-links">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">our team</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">the fleet</a></li>
-                    <li><a href="#">projects</a></li>  
-                    <li><a href="#">contact</a></li>             
+                    <li><a href="<?=base_url();?>">home</a></li>
+                    <li><a href="<?=base_url();?>about">about us</a></li>
+                    <li><a href="<?=base_url();?>our-team">our team</a></li>
+                    <li><a href="<?=base_url();?>services">services</a></li>
+                    <li><a href="<?=base_url();?>fleet">the fleet</a></li>
+                    <li><a href="<?=base_url();?>projects">projects</a></li>  
+                    <li><a href="<?=base_url();?>contact">contact</a></li>             
                  </ul>
                  <div class="clear"></div>
                  <p class="copy-right">&copy; Demenna Cranes PTY LTD. All rights reserved</p>

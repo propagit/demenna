@@ -407,20 +407,85 @@ hr{
 	}
 	.carousel{
 		.item{
-			img{	
+			a{
 				float: left;
 				max-width: 222px;
-				padding-right: 5px;
+				padding-right: 5px;	
+				max-height:165px;
+				overflow:hidden;	
+				
+				&:last-child{
+					padding-right:0;	
+				}
 			}
-			img:last-child{
-				padding-right:0;
+			img{	
+				width:100%;
 			}
+
 		}
 		.slide-btn{
 			top:35%;	
 		}
 	}
+	.carousel-control{
+		width:41px;	
+	}
 }
+
+/* fleet info box height*/
+$fleet_info_height:44px;
+
+.fleet-wrap{
+	padding-right:10px;
+	margin-top:20px;
+		
+	.fleet-box{
+		padding-left: 10px;
+		padding-right: 0;
+		height: 287px;
+		overflow: hidden;
+		margin-bottom: 10px;
+		
+		img{
+			width:100%;	
+		}
+		
+		.fleet-info{
+			@extend .overlay;
+			position:absolute;
+			height: $fleet_info_height;
+			width: 222px;
+			margin: 0 auto 0;
+			z-index: 1000;
+			text-align:center;
+			bottom:0;
+			margin-left:20%;
+			
+			overflow-y: hidden;
+			max-height: 0; 
+		
+			transition-property: all;
+			transition-duration: .5s;
+			transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+			
+			
+			h6{
+				color:$text_white;	
+				padding:0;
+				margin:0;	
+			}
+		}
+		
+		&:hover{
+			.fleet-info{
+				padding-top:10px;
+				max-height:$fleet_info_height;	
+			}
+		}
+	} /*fleet-box*/
+	
+} /* fleet-wrap*/
+
 
 
 
@@ -534,6 +599,25 @@ hr{
 	.app-multi-carousel .carousel .item img{
 		max-width:182px;	
 	}
+	
+	.fleet-wrap{
+		
+		.fleet-box{
+			height: 236px;
+	
+			img{
+				width:100%;	
+			}
+			
+			.fleet-info{
+				margin-left:14%;
+			}
+		
+		} /*fleet-box*/
+	
+	} /* fleet-wrap*/
+	
+	
 	#footer{
 		.footer-box{
 			max-width:25%;	
@@ -577,6 +661,24 @@ hr{
 	.app-multi-carousel .carousel .item img{
 		max-width:182px;	
 	}
+	
+	.fleet-wrap{
+		
+		.fleet-box{
+			height: 236px;
+	
+			img{
+				width:100%;	
+			}
+			
+			.fleet-info{
+				margin-left:14%;
+			}
+		
+		} /*fleet-box*/
+	
+	} /* fleet-wrap*/
+	
 	#footer{
 		.footer-box{
 			max-width:25%;	

@@ -5,7 +5,7 @@ class Content extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		# error_reporting(E_ALL);
+		error_reporting(0);
 	}
 	
 	function index()
@@ -34,12 +34,21 @@ class Content extends CI_Controller {
 		$this->load->view('common/header');
 		
 		if($slug){
-		#if(1){
-			$this->load->view('feet/list');
+			$data['fleet'] = $this->data_model->get_fleet($slug);
+			$data['next'] = $this->data_model->get_next_fleet_key($slug);
+			$this->load->view('fleet/detail',$data);
 		}else{
-			$this->load->view('fleet/detail');
+			$data['fleet'] = $this->data_model->get_fleet();
+			$this->load->view('fleet/list',$data);
 		}
 		$this->load->view('common/footer');	
+	}
+	
+	function app_404()
+	{
+		$this->load->view('common/header');
+		$this->load->view('app_404');
+		$this->load->view('common/footer');		
 	}
 	
 	

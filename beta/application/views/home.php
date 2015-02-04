@@ -83,7 +83,7 @@
             Australia's only on track crane trucks
         </p>
         <img src="<?=base_url();?>assets/img/hero_fleet.jpg" title="Our Fleet" alt="hero_fleet.jpg">
-        <button class="btn btn-yellow-txt"><i class="fa fa-eye"></i> View Fleet</button>
+        <a href="<?=base_url();?>fleet" class="btn btn-yellow-txt"><i class="fa fa-eye"></i> View Fleet</a>
     </div>
     
     <div class="col-xs-4 home-box">
@@ -94,7 +94,7 @@
             Australia's biggest road & rail construction projects
         </p>
         <img src="<?=base_url();?>assets/img/hero_team.jpg" title="Our Team" alt="hero_team.jpg">
-        <button class="btn btn-yellow-txt"><i class="fa fa-eye"></i> Our Team</button>
+        <a href="<?=base_url();?>team" class="btn btn-yellow-txt"><i class="fa fa-eye"></i> Our Team</a>
     </div>
     
     <div class="col-xs-4 home-box">
@@ -105,6 +105,6 @@
             Demmena Cranes brings an unmatched service
         </p>
         <img src="<?=base_url();?>assets/img/hero_project.jpg" title="Our Projects" alt="hero_team.jpg">
-        <button class="btn btn-yellow-txt"><i class="fa fa-eye"></i> View Projects</button>
+        <a href="<?=base_url();?>projects" class="btn btn-yellow-txt"><i class="fa fa-eye"></i> View Projects</a>
     </div>
 </div>
