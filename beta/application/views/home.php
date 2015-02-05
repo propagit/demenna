@@ -22,7 +22,7 @@
                         has the perfefct rig and team for every project
                     </span>
                 </h3>
-                <a href="<?=base_url();?>fleet" class="btn btn-white-txt">Read Case Study</a>
+                <a href="<?=base_url();?>about" class="btn btn-white-txt">Read Case Study</a>
             </div>
         </div>
         
@@ -40,7 +40,7 @@
                          bringing together knowlege second to none
                     </span>
                 </h3>
-                <a href="<?=base_url();?>team" class="btn btn-white-txt">Read More</a>
+                <a href="<?=base_url();?>fleet" class="btn btn-white-txt">Read More</a>
             </div>
         </div>
         
