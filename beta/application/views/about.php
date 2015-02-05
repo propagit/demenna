@@ -28,7 +28,7 @@ DeMenna Cranes Clients will always have access 24 hours a day to the Directors a
         
         <br><br>
         <div class="btn-wrap">
-       		 <a href="<?=base_url();?>team" class="btn btn-white-txt">our team</a> <a href="<?=base_url();?>team" class="btn btn-white-txt">meet the fleet</a>
+       		 <a href="<?=base_url();?>team" class="btn btn-white-txt">our team</a> <a href="<?=base_url();?>fleet" class="btn btn-white-txt">meet the fleet</a>
         </div>
     </div>
 </div>

@@ -24,7 +24,7 @@ It is a long established fact that a reader will be distracted by the readable c
 
         <br><br>
         <div class="btn-wrap">
-       		 <a href="<?=base_url();?>team" class="btn btn-white-txt">our team</a> <a href="<?=base_url();?>team" class="btn btn-white-txt">meet the fleet</a>
+       		 <a href="<?=base_url();?>team" class="btn btn-white-txt">our team</a> <a href="<?=base_url();?>fleet" class="btn btn-white-txt">meet the fleet</a>
         </div>
     </div>
 </div>
