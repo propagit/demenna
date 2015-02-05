@@ -69,6 +69,9 @@
                     </div>
                 </div>
             </form>
+            	<p id="contact-result" class="msg-box" style="display:none;">
+                	
+                </p>
         </div>
         <div class="col-xs-5">
         	<h4>CONECT WITH LUKE DEMENNA</h4>

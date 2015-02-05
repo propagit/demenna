@@ -8,11 +8,11 @@
 	<tbody>
     	<tr>
         	<td width="60">Call</td>
-            <td width="60">1300 - </td>
+            <td width="60"><?=PHONE;?></td>
         </tr>
         <tr>
         	<td width="60">Fax</td>
-            <td width="60">1300 - </td>
+            <td width="60"><?=FAX;?></td>
         </tr>
         <tr>
         	<td width="60">Email</td>

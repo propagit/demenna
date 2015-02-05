@@ -81,7 +81,8 @@ class Content extends CI_Controller {
         # Generate the captcha
         $captcha = create_captcha($vals);
         # Store the captcha value in a session to retrieve later
-        $this->session->set_userdata('captcha_word', $captcha['word']);
+		$this->session->set_userdata('captcha',$captcha);
+		$this->session->set_userdata('hello','test');
         return $captcha;
     }
 	
@@ -101,13 +102,13 @@ class Content extends CI_Controller {
 	}
 	
 	function sendcontact()
-	{
+	{	
 		$name = $this->input->post('name',true);
 		$company = $this->input->post('company',true);
 		$email = $this->input->post('email',true);
 		$phone = $this->input->post('phone',true);
 		$msg = $this->input->post('message');
-		$captcha = $this->input->post('captcha',true);
+		$captcha = $this->input->post('captcha');
 		
 
 		$rules = array(
@@ -365,8 +366,8 @@ class Content extends CI_Controller {
 						}
 						break;
 					case 'captcha':
-						$captcha_word = $this->session->userdata('captcha_word');
-						if ($captcha_word != $input['captcha']) {
+						$captcha = $this->session->userdata('captcha');
+						if ($captcha['captcha_word'] != $input['captcha']) {
 							$errors[] = array('field' => $rule['field'], 'msg' => 'Wrong Code');
 						}
 						break;
