@@ -8,11 +8,7 @@
 ?>
 <div class="container app-container remove-gutters">
 	<div class="col-xs-12 remove-gutters caption">
-    	<h1>EXPERIENCE & RELIABILITY COUNTS</h1>
-        <h3>
-        	The benefits of DeMenna Cranes High Rail Crane trucks is 1 truck can do it all<br>
-            Deliver, Erect, Dismantle, Remove off site
-		</h3>
+        <h3>Experience & Reliability Counts</h3>
     </div>
     
     
@@ -33,7 +29,7 @@
             <div class="item <?=$count == 0 ? 'active' : '';?>">
                 <img src="<?=base_url();?>assets/img/projects/<?=$p['image'];?>">
                 <div class="carousel-caption">
-                    <h1><?=$p['name'];?></h1>
+                    <h1><?=$p['name'];?> <span><?=$p['cost'] . ' '. $p['year']?></span></h1>
                    	<p>
                     	<?=$p['desc'];?>
                     </p>

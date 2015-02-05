@@ -216,23 +216,28 @@ a {
   #banners .carousel-indicators li.active {
     background-color: #ffcc05; }
 
-.project-carousel .carousel-indicators {
-  top: 225px;
-  bottom: inherit; }
-.project-carousel .carousel-caption {
-  bottom: 0 !important;
-  width: 100%;
-  right: 0;
-  left: 0; }
-  .project-carousel .carousel-caption h1 {
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 24px;
-    padding-bottom: 0;
-    margin-bottom: 0; }
-  .project-carousel .carousel-caption p {
-    color: #ffcd05;
-    margin-bottom: 0; }
+.project-carousel {
+  float: left; }
+  .project-carousel .carousel-indicators {
+    top: 20px;
+    bottom: inherit; }
+  .project-carousel .carousel-caption {
+    bottom: 0 !important;
+    width: 100%;
+    right: 0;
+    left: 0; }
+    .project-carousel .carousel-caption h1 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 24px;
+      padding-bottom: 0;
+      margin-bottom: 0; }
+      .project-carousel .carousel-caption h1 span {
+        font-size: 18px;
+        display: block; }
+    .project-carousel .carousel-caption p {
+      color: #ffcd05;
+      margin-bottom: 0; }
 
 .offset-top {
   margin-top: 20px; }
@@ -270,6 +275,11 @@ hr {
     margin-top: 13px;
     line-height: 27px;
     letter-spacing: 1px; }
+
+.secondary-banner {
+  height: 180px; }
+  .secondary-banner img {
+    height: inherit; }
 
 .secondary {
   width: 860px;

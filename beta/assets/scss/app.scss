@@ -323,8 +323,10 @@ a{
 
 .project-carousel{
 	
+	float:left;
+	
 	.carousel-indicators{
-		top:225px;	
+		top:20px;	
 		bottom: inherit;
 	}
 	
@@ -340,6 +342,11 @@ a{
 			line-height:24px;
 			padding-bottom:0;
 			margin-bottom:0;
+			
+			span{
+				font-size:18px;
+				display:block;	
+			}
 		}
 		
 		p{
@@ -381,7 +388,12 @@ hr{
 	margin-top:45px;
 }
 .secondary-banner {
+	height:180px;
 	
+	img{
+		height:inherit;
+	}
+
 }
 .secondary{
 	width:860px;
