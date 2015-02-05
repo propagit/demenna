@@ -31,7 +31,7 @@
                 <ul class="quick-links">
                     <li><a href="<?=base_url();?>">home</a></li>
                     <li><a href="<?=base_url();?>about">about us</a></li>
-                    <li><a href="<?=base_url();?>our-team">our team</a></li>
+                    <li><a href="<?=base_url();?>team">our team</a></li>
                     <li><a href="<?=base_url();?>services">services</a></li>
                     <li><a href="<?=base_url();?>fleet">the fleet</a></li>
                     <li><a href="<?=base_url();?>projects">projects</a></li>  
