@@ -112,7 +112,7 @@ $('#send-msg').click(function(){
 				remove_error_class(form_id);
 				mark_errors(form_id,errors);
 			}else{
-				$('#contact-result').html('Your message was successfully sent.').removeClass('bg-danger').addClass('bg-success text-success').show();
+				$('#contact-result').html('Your message was successfully sent.').removeClass('bg-danger').removeClass('text-danger').addClass('bg-success text-success').show();
 				remove_error_class(form_id);
 				$('#'+form_id)[0].reset();
 			}
