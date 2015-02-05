@@ -25,7 +25,7 @@
     <header>
         <div id="header">
         	<div id="logo">
-            	<img src="<?=base_url();?>assets/img/core/demennaCranesLogo.png" title="Demenna Cranes logo" alt="demennaCranesLogo.png">
+            	<a href="<?=base_url();?>"><img src="<?=base_url();?>assets/img/core/demennaCranesLogo.png" title="Demenna Cranes logo" alt="demennaCranesLogo.png"></a>
             </div>
             
             <div id="nav-wrap">
