@@ -36,6 +36,9 @@ define('FOPEN_READ_WRITE_CREATE',				'a+b');
 define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
-
+define('CAPTCHA_PATH', 'uploads/captcha/');
+define('PROP_PWORD','m0r3m0n3y');
+define('DOMAIN','demennacranes.com.au');
+define('SITE_NAME','DeMenna Cranes');
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

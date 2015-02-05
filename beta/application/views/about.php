@@ -26,12 +26,6 @@ DeMenna Cranes Clients will always have access 24 hours a day to the Directors a
 
         </p>
         
-        <ul style="display:none;">
-        	<li>Small crane trucks, great for general deliveries to Medium/Large Crane trucks</li>
-            <li>Our heavy haulage division of twin steers prime movers equipped with 70 ton meter Cranes</li>
-            <li>Our heavy duty step deck trailers with ramps for moving our clients equipment either to and from or just  around site</li>
-            <li>DeMenna Cranes has a new Rail Division DMC Rail which supplies Heavy duty High rail crane trucks and EWPs</li>
-        </ul>
         <br><br>
         <div class="btn-wrap">
        		 <a href="<?=base_url();?>team" class="btn btn-white-txt">our team</a> <a href="<?=base_url();?>team" class="btn btn-white-txt">meet the fleet</a>

@@ -45,11 +45,19 @@ p{
 
 @mixin box($bg_color){
 	background-color:$bg_color;
-	padding-bottom:10px;
+	padding-bottom:14px;
 	h1,h3{
 		@extend .text_shadow;
 		text-align:center;
-	}	
+	}
+	h1{
+		margin-top:26px;	
+	}
+	h3{
+		margin-top:13px;	
+		line-height:27px;
+		letter-spacing:1px;
+	}
 }
 @mixin btn($text_color,$width){
 	width:$width;
@@ -67,6 +75,36 @@ p{
 	.fa{
 		font-size:18px;	
 	}
+}
+
+@mixin placeholder($color:#a3a3a3,$font_size:16px,$font_weight:300){
+	&::-webkit-input-placeholder {
+  		 color: $color;
+		 font-size:$font_size;
+		 font-family:$lato;
+		 font-weight:$font_weight;
+	}
+
+	&:-moz-placeholder { /* Firefox 18- */
+   		color: $color; 
+		font-size:$font_size;
+		font-family:$lato; 
+		font-weight:$font_weight;
+	}
+
+	&::-moz-placeholder {  /* Firefox 19+ */
+   		color: $color;  
+		font-size:$font_size;
+		font-family:$lato;
+		font-weight:$font_weight;
+	}
+
+	&:-ms-input-placeholder {  
+   		color: $color; 
+		font-size:$font_size;
+		font-family:$lato; 
+		font-weight:$font_weight;
+	}	
 }
 
 .box-shadow{
@@ -95,7 +133,7 @@ p{
 	width: 100%;
 	position:absolute;
 }
-h1,h2,h5,h6{
+h1,h2,h4,h5,h6{
 	font-family:$raleway;
 	text-transform:uppercase;	
 }
@@ -121,9 +159,10 @@ h3{
 	line-height:24px;
 }
 h4{
-	font-family:$raleway;
 	color:$text_blue;
-	font-size:18px	
+	font-size:16px;
+	line-height:18px;
+	font-weight:800;	
 }
 h5{
 	color:$text_blue;
@@ -143,7 +182,12 @@ a{
 		color:$text_blue;	
 	}
 }
-
+.slogan{
+	font-size:14px;
+	font-weight:800;
+	margin-top:0;
+	margin-bottom:2px;
+}
 
 
 #wrapper{
@@ -241,6 +285,8 @@ a{
 		background-color:transparent;
 	}
 }
+
+
 #banners{
 	 .item img{
 		width:100%;
@@ -272,6 +318,35 @@ a{
 			}
 	 }
 	 
+}
+
+
+.project-carousel{
+	
+	.carousel-indicators{
+		top:225px;	
+		bottom: inherit;
+	}
+	
+	.carousel-caption{
+		bottom: 0 !important;
+		width: 100%;
+		right: 0;
+		left: 0;
+		
+		h1{
+			font-size:22px;	
+			font-weight:700;
+			line-height:24px;
+			padding-bottom:0;
+			margin-bottom:0;
+		}
+		
+		p{
+			color:$text_yellow;	
+			margin-bottom:0;
+		}
+	}
 }
 .offset-top{
 	margin-top:20px;	
@@ -311,10 +386,17 @@ hr{
 .secondary{
 	width:860px;
 	margin:auto;
-	padding-top:35px;
+	padding-top:22px;
+	
+	h4{
+		margin-bottom:0;	
+	}
+	
 	p{
 		text-align:justify;	
+		margin-top:2px;
 	}
+	
 	ul{
 		padding-left:30px;
 		padding-top:10px;
@@ -331,6 +413,46 @@ hr{
 			margin-right:15px;	
 		}
 	}
+	
+	.address{
+		margin-top:10px;
+		
+		p{
+			text-transform:uppercase;	
+		}
+		
+		
+		h4{
+			margin-top:24px;
+		}
+		
+		.fa-ul{
+			margin:0;
+			padding:0;
+			width:100%;
+			
+			li{
+				padding-left:0;	
+				font-size:16px;
+				font-weight:300;
+				line-height:24px;
+				padding-bottom:0;
+				text-transform:none;
+				
+				.fa{
+					padding-right:25px;
+					float:left;
+					margin-top:5px;	
+				}
+			}
+		}
+	}
+}
+
+.linkedin{
+	margin-top:17px;	
+	margin-bottom:10px;
+	float:left;
 }
 
 .gallery-box{
@@ -485,6 +607,35 @@ $fleet_info_height:44px;
 	} /*fleet-box*/
 	
 } /* fleet-wrap*/
+
+
+/* app form*/
+
+/* horizontal form*/
+.app-form-hz{
+	padding-top:20px;
+	
+	label,
+	.control-label{
+		text-align:left;	
+		font-size: 16px;
+		font-family: $lato;
+		font-weight: 300;
+	}
+	
+	.form-group{
+		margin-bottom:10px;	
+	}
+	
+	.form-control{
+		@include placeholder();
+		border-radius:0;	
+		color:$text_blue;
+	}
+		
+}
+
+
 
 
 #footer{

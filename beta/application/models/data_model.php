@@ -216,6 +216,66 @@ class Data_model extends CI_Model {
 			return $first_key;	
 		}
 	}
+	
+	function get_projects($key = '')
+	{
+		$projects = array(
+				"monash-freeway" => 
+					array("image" => "banner1.jpg","name" => "Monash Freeway Upgrade", "cost" => "$1.39 billion", "year" => '2008 - 2010',
+							"desc" => "Supplied Crane Trucks and dogman",	
+					),
+				
+				
+				"peninsula-link" => 
+					array("image" => "banner1.jpg","name" => "Peninsula Link", "cost" => "$764 Million", "year" => '2010 - 2012',
+							"desc" => "Supplied Crane Trucks and Crane Semis as well as Dogman for ABI Group.<br>
+									   Peninsula link Melbourne Bridge Construction, DeMenna Cranes Medium to Large Crane trucks ideal for Bridge and freeway construction limiting the number of vehicles on site, where our crane 		trucks bring material in erect and remove, 1 Crane truck 1 cost effective procedure",	
+					),
+					
+				"present-regional-rail-link" => 
+					array("image" => "banner1.jpg","name" => "Present Regional Rail Link", "cost" => "$8.5 Billion", "year" => '2012 - Present',
+							"desc" => "Suppling High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Thiess /Balfour Beatty, John Holland/Abi Group and United Group.",	
+					),
+				
+				"springvale-road-grade-separation" => 
+					array("image" => "banner1.jpg","name" => "Springvale road Grade Separation", "cost" => "$300 Million", "year" => '2013 - 2014',
+							"desc" => "Suppling High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Balfour Beatty/Mc Connell Dowell",	
+					),
+					
+				"mitcham-rooks-road-grade-separation" => 
+					array("image" => "banner1.jpg","name" => "Mitcham Rooks road Grade Separation", "cost" => "$192 Million", "year" => '2013 - 2014',
+							"desc" => "Suppling High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to John Holland",	
+					),
+				
+				"bald-hill-wind-farm" => 
+					array("image" => "banner1.jpg","name" => "2014-Present Bald Hill Wind Farm", "cost" => "$300 Million", "year" => '2014 - Present ',
+							"desc" => "Suppling Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Hazel Brothers",	
+					),
+					
+				"present-metro-train-brp-frankston-line" => 
+					array("image" => "banner1.jpg","name" => "Metro Train BRP Frankston Line", "cost" => "", "year" => '2015 - Present ',
+							"desc" => "Suppling OHLE Supervision, High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Metro Trains",	
+					),
+				
+				"john-holland-ringwood-station-upgrade" => 
+					array("image" => "banner1.jpg","name" => "John Holland Ringwood Station upgrade", "cost" => "", "year" => '2015 - Present ',
+							"desc" => "Supplying OHLE Supervision, High Rail Cranes, Riggers and labour hire",	
+					),
+				
+				"thiess-dingley-by-pass " => 
+					array("image" => "banner1.jpg","name" => "THIESS Dingley By-Pass ", "cost" => "", "year" => '2015 - Present ',
+							"desc" => "Supplying Cranes, Heavy Haulage, Dogman, Riggers, Labour hire",	
+					)
+					
+		
+		
+		);	
+		
+		if($key){
+			return $projects[$key];	
+		}
+		return $projects;
+	}
 }
 ?>
 	

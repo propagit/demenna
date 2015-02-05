@@ -43,7 +43,7 @@ $route['404_override'] = 'content/app_404';
 
 $pages = array(
 			'about',
-			'service',
+			'services',
 			'fleet',
 			'projects',
 			'contact',
