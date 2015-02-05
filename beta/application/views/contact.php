@@ -112,7 +112,7 @@ $('#send-msg').click(function(){
 				remove_error_class(form_id);
 				mark_errors(form_id,errors);
 			}else{
-				$('#contact-result').html('Your message was successfully sent.').removeClass('bg-danger').addClass('bg-success').show();
+				$('#contact-result').html('Your message was successfully sent.').removeClass('bg-danger').addClass('bg-success text-success').show();
 				remove_error_class(form_id);
 				$('#'+form_id)[0].reset();
 			}
@@ -126,7 +126,7 @@ function mark_errors(form_id,errors){
 	errors.forEach(function(e){
 		$('#' + form_id).find('[name="' + e.field + '"]').parent().addClass('has-error');
 		msg += e.msg+'<br>';
-		$('#contact-result').html(msg).addClass('bg-danger').show();
+		$('#contact-result').html(msg).addClass('bg-danger text-danger').show();
 	});	
 }
 

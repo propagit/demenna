@@ -5,7 +5,7 @@ class Content extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		error_reporting(0);
+		#error_reporting(0);
 	}
 	
 	function index()
@@ -367,7 +367,7 @@ class Content extends CI_Controller {
 						break;
 					case 'captcha':
 						$captcha = $this->session->userdata('captcha');
-						if ($captcha['captcha_word'] != $input['captcha']) {
+						if ($captcha['word'] != $input['captcha']) {
 							$errors[] = array('field' => $rule['field'], 'msg' => 'Wrong Code');
 						}
 						break;
