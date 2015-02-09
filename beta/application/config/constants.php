@@ -37,7 +37,7 @@ define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 define('CAPTCHA_PATH', 'uploads/captcha/');
-define('PROP_PWORD','m0r3m0n3y');
+define('PROP_PWORD','m0r3m0n3Y');
 define('DOMAIN','demennacranes.com.au');
 define('SITE_NAME','DeMenna Cranes');
 define('PHONE','03 9465 4118');

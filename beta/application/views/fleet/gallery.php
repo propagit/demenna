@@ -1,8 +1,10 @@
 <?php
+	$missing_items = 0;
+	$items_per_row = 5;
 	$fleet = $this->data_model->get_fleet();
-	$rows = count($fleet)/5;
+	$rows = count($fleet)/$items_per_row;
 	$loop = is_int($rows) ? $rows : $rows + 1;
-
+	$missing_items = $items_per_row - (count($fleet) - (floor($rows) * $items_per_row));
 ?>
 
 <div class="col-xs-12 app-multi-carousel">
@@ -30,6 +32,21 @@
 						$counter++;
                     } # foreach
                 ?>	
+                
+                <?php if($missing_items){ 
+					  $counter2 = 1;
+						 foreach($fleet as $key => $f){
+							 if($counter2 <= $missing_items){
+				?>
+                				<a href="<?=base_url();?>fleet/<?=$key;?>"><img src="<?=base_url();?>assets/img/fleet/<?=$f['image'];?>"></a>	
+                <?php 
+							 }else{
+								break; 
+							 }
+						$counter2++;
+						}
+					}
+				?>
         	</div>	
         </div>
         

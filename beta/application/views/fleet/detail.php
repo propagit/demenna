@@ -20,7 +20,7 @@
         </ul>
         
         <div class="gallery-btns">
-        	<button class="btn btn-yellow-txt"><i class="fa fa-bullhorn"></i> contact us</button><a href="<?=base_url();?>fleet/<?=$next;?>" class="btn btn-yellow-txt btn-sml">next <i class="fa fa-angle-right"></i></a>
+        	<a href="<?=base_url();?>contact" class="btn btn-yellow-txt"><i class="fa fa-bullhorn"></i> contact us</a><a href="<?=base_url();?>fleet/<?=$next;?>" class="btn btn-yellow-txt btn-sml">next <i class="fa fa-angle-right"></i></a>
         </div>
     </div>
     
