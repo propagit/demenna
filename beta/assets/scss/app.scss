@@ -722,6 +722,75 @@ $fleet_info_height:44px;
 @mixin resize_box($full_width){
 	width:$full_width * 0.80;	
 }
+
+
+@media(min-width:992px) and (max-width:1200px){
+	.nav-app li > a{
+		min-width:110px;	
+	}	
+	#banners{
+	 	.carousel-caption{
+			right:10%;
+			left:10%;
+			bottom:25%;
+	 	}
+	 
+	}
+	.home-box{
+		img{
+			width:100%;	
+		}
+	}
+	.secondary-banner{
+		img{
+			max-width:920px;
+		}
+	}
+	.project-carousel{
+		
+		.carousel-caption{
+			left:0 !important;
+		}
+	} /* project-carousel*/
+	.gallery-img{
+		@include resize_box(630px);
+	}
+	.gallery-desc{
+		@include resize_box(500px);
+	}
+	.app-multi-carousel .carousel .item img{
+		max-width:178px;	
+	}
+	
+	.fleet-wrap{
+		
+		.fleet-box{
+			height: 236px;
+	
+			img{
+				width:100%;	
+			}
+			
+			.fleet-info{
+				margin-left:14%;
+			}
+		
+		} /*fleet-box*/
+	
+	} /* fleet-wrap*/
+	
+	#footer{
+		.footer-box{
+			max-width:25%;	
+		}
+		.fa-ul{
+			li > span{
+				display:none !important;	
+			}
+		}
+	}
+}
+
 @media(max-width:991px){
 	#wrapper,
 	#pattern,
@@ -748,6 +817,14 @@ $fleet_info_height:44px;
 	 	}
 	 
 	}
+	
+	.project-carousel{
+		
+		.carousel-caption{
+			left:0 !important;
+		}
+	} /* project-carousel*/
+	
 	.home-box{
 		img{
 			width:100%;	
@@ -760,7 +837,7 @@ $fleet_info_height:44px;
 		@include resize_box(500px);
 	}
 	.app-multi-carousel .carousel .item img{
-		max-width:182px;	
+		max-width:178px;	
 	}
 	
 	.fleet-wrap{
@@ -792,69 +869,6 @@ $fleet_info_height:44px;
 		}
 	}
 }
-
-@media(min-width:992px) and (max-width:1200px){
-	.nav-app li > a{
-		min-width:110px;	
-	}	
-	#banners{
-	 	.carousel-caption{
-			right:10%;
-			left:10%;
-			bottom:25%;
-	 	}
-	 
-	}
-	.home-box{
-		img{
-			width:100%;	
-		}
-	}
-	.secondary-banner{
-		img{
-			max-width:920px;
-		}
-	}
-	.gallery-img{
-		@include resize_box(630px);
-	}
-	.gallery-desc{
-		@include resize_box(500px);
-	}
-	.app-multi-carousel .carousel .item img{
-		max-width:182px;	
-	}
-	
-	.fleet-wrap{
-		
-		.fleet-box{
-			height: 236px;
-	
-			img{
-				width:100%;	
-			}
-			
-			.fleet-info{
-				margin-left:14%;
-			}
-		
-		} /*fleet-box*/
-	
-	} /* fleet-wrap*/
-	
-	#footer{
-		.footer-box{
-			max-width:25%;	
-		}
-		.fa-ul{
-			li > span{
-				display:none !important;	
-			}
-		}
-	}
-}
-
-
 
 
 

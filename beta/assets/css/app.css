@@ -523,6 +523,48 @@ hr {
 /*
 	Responsive 
 */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .nav-app li > a {
+    min-width: 110px; }
+
+  #banners .carousel-caption {
+    right: 10%;
+    left: 10%;
+    bottom: 25%; }
+
+  .home-box img {
+    width: 100%; }
+
+  .secondary-banner img {
+    max-width: 920px; }
+
+  .project-carousel .carousel-caption {
+    left: 0 !important; }
+
+  /* project-carousel*/
+  .gallery-img {
+    width: 504px; }
+
+  .gallery-desc {
+    width: 400px; }
+
+  .app-multi-carousel .carousel .item img {
+    max-width: 178px; }
+
+  .fleet-wrap {
+    /*fleet-box*/ }
+    .fleet-wrap .fleet-box {
+      height: 236px; }
+      .fleet-wrap .fleet-box img {
+        width: 100%; }
+      .fleet-wrap .fleet-box .fleet-info {
+        margin-left: 14%; }
+
+  /* fleet-wrap*/
+  #footer .footer-box {
+    max-width: 25%; }
+  #footer .fa-ul li > span {
+    display: none !important; } }
 @media (max-width: 991px) {
   #wrapper,
   #pattern,
@@ -546,6 +588,10 @@ hr {
     left: 10%;
     bottom: 25%; }
 
+  .project-carousel .carousel-caption {
+    left: 0 !important; }
+
+  /* project-carousel*/
   .home-box img {
     width: 100%; }
 
@@ -556,45 +602,7 @@ hr {
     width: 400px; }
 
   .app-multi-carousel .carousel .item img {
-    max-width: 182px; }
-
-  .fleet-wrap {
-    /*fleet-box*/ }
-    .fleet-wrap .fleet-box {
-      height: 236px; }
-      .fleet-wrap .fleet-box img {
-        width: 100%; }
-      .fleet-wrap .fleet-box .fleet-info {
-        margin-left: 14%; }
-
-  /* fleet-wrap*/
-  #footer .footer-box {
-    max-width: 25%; }
-  #footer .fa-ul li > span {
-    display: none !important; } }
-@media (min-width: 992px) and (max-width: 1200px) {
-  .nav-app li > a {
-    min-width: 110px; }
-
-  #banners .carousel-caption {
-    right: 10%;
-    left: 10%;
-    bottom: 25%; }
-
-  .home-box img {
-    width: 100%; }
-
-  .secondary-banner img {
-    max-width: 920px; }
-
-  .gallery-img {
-    width: 504px; }
-
-  .gallery-desc {
-    width: 400px; }
-
-  .app-multi-carousel .carousel .item img {
-    max-width: 182px; }
+    max-width: 178px; }
 
   .fleet-wrap {
     /*fleet-box*/ }
