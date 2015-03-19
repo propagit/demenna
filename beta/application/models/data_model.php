@@ -191,7 +191,27 @@ class Data_model extends CI_Model {
 							"gallery" => "",		
 													
 							
+					),
+					
+					"rail-trailer" => 
+					array("image" => "rail_trailer_2.jpg","name" => "Rail Trailer", "short_name" => "Rail Trailer", "laod_capacity" => "15 tons",
+							"specs" =>
+								array(
+										"Carrying capacity 15 tons on track",
+										"Available with a 1 meter or 4 meter draw bar",
+										"Available for carrying long lengths of steel on track"
+									),
+
+							"desc" => ""	,
+							"gallery" => array(
+												"rail_trailer_2.jpg",
+												"rail_trailer.jpg"
+												)		
+													
+							
 					)
+					
+					
 		
 		
 		);	
@@ -238,12 +258,12 @@ class Data_model extends CI_Model {
 					),
 				
 				"springvale-road-grade-separation" => 
-					array("image" => "Springvale.jpg","name" => "Springvale road Grade Separation", "cost" => "$300 Million", "year" => '2013 - 2014',
+					array("image" => "Springvale.jpg","name" => "Springvale Road Grade Separation", "cost" => "$300 Million", "year" => '2013 - 2014',
 							"desc" => "Suppling High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Balfour Beatty/Mc Connell Dowell",	
 					),
 					
 				"mitcham-rooks-road-grade-separation" => 
-					array("image" => "Mitchem.jpg","name" => "Mitcham Rooks road Grade Separation", "cost" => "$192 Million", "year" => '2013 - 2014',
+					array("image" => "Mitchem.jpg","name" => "Mitcham Rooks Road Grade Separation", "cost" => "$192 Million", "year" => '2013 - 2014',
 							"desc" => "Suppling High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to John Holland",	
 					),
 				

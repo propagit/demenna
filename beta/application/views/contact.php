@@ -17,7 +17,7 @@
     <div class="secondary">
     	<div class="col-xs-7">
         	<p>
-            	Contact our team via the below webform for a fast response 24-7<br>
+            	Contact our team via the below web form for a fast response 24-7<br>
                 * Denotes required field
             </p>
             <form id="contact-form" class="form-horizontal app-form-hz">
@@ -84,7 +84,7 @@
                 <h4>HEAD OFFICE</h4>
                 <p>
                     5 Green St, Thomastown <br>
-                    Vic AUstralia 3074
+                    Vic Australia 3074
                 </p>
             	<ul class="fa-ul">
                 	<li><i class="fa fa-phone-square"></i> 03 9465 4118</li>

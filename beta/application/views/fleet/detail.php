@@ -6,6 +6,11 @@
 	<div class="offset-top gallery-img">
     	<img src="<?=base_url();?>assets/img/fleet/<?=$fleet['image']?>">
         <!-- <a href="<?=base_url();?>assets/img/gallery/crane1.jpg" data-lightbox="gallery"><div class="view-gallery-btn"><i class="fa fa-image"></i> view gallery</div></a>-->
+        <?php if($fleet['gallery']){ 
+			foreach($fleet['gallery'] as $img){
+		?>
+        	<a href="<?=base_url();?>assets/img/fleet/<?=$img;?>" data-lightbox="gallery"><div class="view-gallery-btn"><i class="fa fa-image"></i> view gallery</div></a>
+        <?php }} ?>
     </div>
     
     <div class="offset-top gallery-desc">

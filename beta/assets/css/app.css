@@ -305,7 +305,7 @@ hr {
   .secondary .address {
     margin-top: 10px; }
     .secondary .address p {
-      text-transform: uppercase; }
+      /*text-transform:uppercase;*/ }
     .secondary .address h4 {
       margin-top: 24px; }
     .secondary .address .fa-ul {
