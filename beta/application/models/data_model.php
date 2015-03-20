@@ -208,6 +208,23 @@ class Data_model extends CI_Model {
 												)		
 													
 							
+					),
+					
+					"isuzu-1500-hmf-3000-k4" => 
+					array("image" => "truck12.jpg","name" => "Isuzu 1500 Fitted with HMF 3000 K4", "short_name" => "Isuzu 1500 HMF 3000", "laod_capacity" => "7 tons",
+							"specs" =>
+								array(
+										"Hi rail machine (board and standard gage)",
+										"Carrying capacity 7 tons",
+										"Weight of vehicle 16 tons",
+										"Tray length 7.3 meters",
+										"Available for interstate work"
+									),
+
+							"desc" => ""	,
+							"gallery" => "",		
+													
+							
 					)
 					
 					
