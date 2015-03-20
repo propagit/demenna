@@ -18,7 +18,7 @@
         <div class="col-xs-4 fleet-box">
             <img src="<?=base_url();?>assets/img/fleet/<?=$f['image'];?>">
             <div class="fleet-info">
-                <h6><?=$f['short_name']?><br>Load Capacity <?=$f['laod_capacity'];?></h6>
+                <h6><?=$f['short_name']?><br>Load Capacity <?=$f['load_capacity'];?></h6>
             </div>	
         </div>
         </a>
