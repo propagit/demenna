@@ -26,7 +26,12 @@
                     } #if counter > 5
                 ?>
                 
-                	<a href="<?=base_url();?>fleet/<?=$key;?>"><img src="<?=base_url();?>assets/img/fleet/<?=$f['image'];?>"></a>
+                	<a href="<?=base_url();?>fleet/<?=$key;?>">
+                    	<img src="<?=base_url();?>assets/img/fleet/<?=$f['image'];?>">
+                    	<div class="caption">
+                            <h3><?=$f['short_name'];?></h3>
+                        </div>
+                    </a>
                 	
                 <?php
 						$counter++;
@@ -38,7 +43,12 @@
 						 foreach($fleet as $key => $f){
 							 if($counter2 <= $missing_items){
 				?>
-                				<a href="<?=base_url();?>fleet/<?=$key;?>"><img src="<?=base_url();?>assets/img/fleet/<?=$f['image'];?>"></a>	
+                				<a href="<?=base_url();?>fleet/<?=$key;?>">
+                                	<img src="<?=base_url();?>assets/img/fleet/<?=$f['image'];?>">
+                                    <div class="caption">
+                                        <h3><?=$f['short_name'];?></h3>
+                                    </div>
+                                </a>	
                 <?php 
 							 }else{
 								break; 

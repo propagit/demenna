@@ -366,7 +366,8 @@ hr {
     line-height: 39px; }
   .gallery-desc .fa-ul {
     margin-left: 25px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    min-height: 215px; }
     .gallery-desc .fa-ul li {
       font-weight: 600; }
     .gallery-desc .fa-ul .fa-li {
@@ -393,6 +394,24 @@ hr {
   overflow: hidden; }
   .app-multi-carousel .carousel .item a:last-child {
     padding-right: 0; }
+    .app-multi-carousel .carousel .item a:last-child .caption {
+      width: 222px; }
+  .app-multi-carousel .carousel .item a .caption {
+    background-color: rgba(15, 63, 128, 0.9);
+    position: absolute;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0, 1, 0.6, 1);
+    max-height: 45px;
+    top: 120px;
+    width: 217px;
+    margin-top: 45px; }
+    .app-multi-carousel .carousel .item a .caption h3 {
+      margin-top: 10px;
+      text-shadow: none;
+      font-size: 14px; }
+  .app-multi-carousel .carousel .item a:hover .caption {
+    margin-top: 0; }
 .app-multi-carousel .carousel .item img {
   width: 100%; }
 .app-multi-carousel .carousel .slide-btn {
@@ -548,6 +567,16 @@ hr {
   .gallery-desc {
     width: 400px; }
 
+  .app-multi-carousel .carousel .item a:last-child .caption {
+    width: 180px; }
+  .app-multi-carousel .carousel .item a .caption {
+    max-height: 45px;
+    top: 100px;
+    width: 178px;
+    margin-top: 45px; }
+    .app-multi-carousel .carousel .item a .caption h3 {
+      margin-top: 5px;
+      font-size: 12px; }
   .app-multi-carousel .carousel .item img {
     max-width: 178px; }
 
@@ -601,6 +630,16 @@ hr {
   .gallery-desc {
     width: 400px; }
 
+  .app-multi-carousel .carousel .item a:last-child .caption {
+    width: 180px; }
+  .app-multi-carousel .carousel .item a .caption {
+    max-height: 45px;
+    top: 100px;
+    width: 178px;
+    margin-top: 45px; }
+    .app-multi-carousel .carousel .item a .caption h3 {
+      margin-top: 5px;
+      font-size: 12px; }
   .app-multi-carousel .carousel .item img {
     max-width: 178px; }
 

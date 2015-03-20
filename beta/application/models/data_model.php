@@ -176,8 +176,8 @@ class Data_model extends CI_Model {
 							
 					),
 		
-					"Volvo-fl6-palfinger-1250-pk3" => 
-					array("image" => "truck9.jpg","name" => "Volvo FL 6 Fitted with Palfinger 1250 PK3", "short_name" => "Volvo FL 6 Palfinger 1250", "laod_capacity" => "10 tons",
+					"volvo-fl6-palfinger-1250-pk3" => 
+					array("image" => "truck11.jpg","name" => "Volvo FL 6 Fitted with Palfinger 1250 PK3", "short_name" => "Volvo FL 6 Palfinger 1250", "laod_capacity" => "10 tons",
 							"specs" =>
 								array(
 										"Carrying capacity 10 tons",
@@ -204,7 +204,6 @@ class Data_model extends CI_Model {
 
 							"desc" => ""	,
 							"gallery" => array(
-												"rail_trailer_2.jpg",
 												"rail_trailer.jpg"
 												)		
 													
