@@ -308,6 +308,12 @@ class Data_model extends CI_Model {
 							"desc" => "Supplying Hi Rail cranes, OHLE supervisors, riggers and dogman to erect and remove new and old rail structures",	
 					),
 					
+				"frankston-brp-line-2" => 
+					array("image" => "frankston3.jpg","name" => "Frankston BRP Project", "cost" => "$300 Milion", "year" => 'Current',
+							"desc" => "Supplying Hi Rail cranes, OHLE supervisors, riggers and dogman to erect and remove new and old rail structures",	
+					),
+						
+					
 		
 		
 		);	
