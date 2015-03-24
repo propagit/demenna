@@ -289,7 +289,7 @@ class Data_model extends CI_Model {
 					),
 					
 				"present-metro-train-brp-frankston-line" => 
-					array("image" => "frankston.jpg","name" => "Metro Train BRP Frankston Line", "cost" => "", "year" => '2015 - Present ',
+					array("image" => "frankston.jpg","name" => "Metro Train BRP Frankston Line", "cost" => "$300 Milion", "year" => '2015 - Present ',
 							"desc" => "Suppling OHLE Supervision, High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Metro Trains",	
 					),
 				
@@ -301,7 +301,12 @@ class Data_model extends CI_Model {
 				"thiess-dingley-by-pass " => 
 					array("image" => "Thiess.jpg","name" => "THIESS Dingley By-Pass ", "cost" => "", "year" => '2015 - Present ',
 							"desc" => "Supplying Cranes, Heavy Haulage, Dogman, Riggers, Labour hire",	
-					)
+					),
+					
+				"frankston-brp-line" => 
+					array("image" => "frankston2.jpg","name" => "Frankston BRP Project", "cost" => "$300 Milion", "year" => 'Current',
+							"desc" => "Supplying Hi Rail cranes, OHLE supervisors, riggers and dogman to erect and remove new and old rail structures",	
+					),
 					
 		
 		
