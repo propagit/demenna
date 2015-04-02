@@ -7,7 +7,7 @@
 	<div class="col-xs-12 remove-gutters caption">
     	<h1>WORLD CLASS ROAD - RAIL TEAM</h1>
         <h3>
-        	Demenna Cranes expertise has been sourced from all over the world<br>
+        	DeMenna Cranes expertise has been sourced from all over the world<br>
 			bringing together knowledge second to none
 		</h3>
     </div>

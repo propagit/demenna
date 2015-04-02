@@ -38,7 +38,7 @@
                     <li><a href="<?=base_url();?>contact">contact</a></li>             
                  </ul>
                  <div class="clear"></div>
-                 <p class="copy-right">&copy; Demenna Cranes PTY LTD. All rights reserved</p>
+                 <p class="copy-right">&copy; DeMenna Cranes PTY LTD. All rights reserved</p>
             </div>
         </div>
     </footer>

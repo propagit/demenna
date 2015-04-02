@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
+<meta name="description" content="<?=$description ? $description : '';?>">
 <!-- jQuery-->
 <script type="text/javascript" src="<?=base_url();?>assets/js/jquery.min.1.11.1.js"></script>
 <!-- bootstrap js-->
@@ -14,7 +14,7 @@
 <!--styles-->
 <link rel="stylesheet" href="<?=base_url();?>assets/css/app.css">
 
-<title>Demenna Cranes</title>
+<title><?=$title ? $title : 'DeMenna Cranes';?></title>
 </head>
 <?php
 	$cur_page = $this->uri->segment(1);

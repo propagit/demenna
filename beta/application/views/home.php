@@ -14,11 +14,11 @@
                 <h1>Meet The Family</h1>
                 <h3>
                     <span class="hidden-lg hidden-sm hidden-xs">
-                        Demenna Cranes extensive Crane Trucks/High Rail Crane Trucks Fleet 
+                        DeMenna Cranes extensive Crane Trucks/High Rail Crane Trucks Fleet 
                         has the perfect rig and team for every project
                     </span>
                     <span class="hidden-md">
-                        Demenna Cranes extensive Crane Trucks/High Rail Crane Trucks Fleet <br>
+                        DeMenna Cranes extensive Crane Trucks/High Rail Crane Trucks Fleet <br>
                         has the perfect rig and team for every project
                     </span>
                 </h3>
@@ -32,11 +32,11 @@
                 <h1>WORLD CLASS ROAD - RAIL TEAM</h1>
                 <h3>
                     <span class="hidden-lg hidden-sm hidden-xs">
-                         Demenna Cranes expertise has been sourced from all over the world
+                         DeMenna Cranes expertise has been sourced from all over the world
                          bringing together knowledge second to none
                     </span>
                     <span class="hidden-md">
-                         Demenna Cranes expertise has been sourced from all over the world<br>
+                         DeMenna Cranes expertise has been sourced from all over the world<br>
                          bringing together knowledge second to none
                     </span>
                 </h3>
@@ -50,11 +50,11 @@
                 <h1>BUILDING AUSTRALIA’S HIGHWAYS</h1>
                 <h3>
                     <span class="hidden-lg hidden-sm hidden-xs">
-                         Demenna Cranes was chosen as the preferred supplier for the 3.8 billion dollar 
+                         DeMenna Cranes was chosen as the preferred supplier for the 3.8 billion dollar 
                          City Link  Peninsula Link Highway.
                     </span>
                     <span class="hidden-md">
-                        Demenna Cranes was chosen as the preferred supplier for the 3.8 billion dollar<br>
+                        DeMenna Cranes was chosen as the preferred supplier for the 3.8 billion dollar<br>
                         City Link  Peninsula Link Highway.
                     </span>
                    
@@ -78,7 +78,7 @@
     <div class="col-xs-4 home-box">
         <h2>Meet The Fleet</h2>
         <p>
-            The Demenna Crane Fleet is diverse offering
+            The DeMenna Crane Fleet is diverse offering
             a crane perfect for any task. The fleet also contains
             Australia's only on track crane trucks
         </p>
@@ -102,7 +102,7 @@
         <p>
             With one of the most flexible crane fleets in 
             Australia and over 50 years industry experience 
-            Demmena Cranes brings an unmatched service
+            DeMenna Cranes brings an unmatched service
         </p>
         <img src="<?=base_url();?>assets/img/hero_project.jpg" title="Our Projects" alt="hero_team.jpg">
         <a href="<?=base_url();?>projects" class="btn btn-yellow-txt"><i class="fa fa-eye"></i> View Projects</a>

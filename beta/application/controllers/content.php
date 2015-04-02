@@ -10,60 +10,101 @@ class Content extends CI_Controller {
 	
 	function index()
 	{
-		$this->load->view('common/header');
+		$header = array(
+						'title' => "DeMenna Cranes - Mobile Crane Hire",
+						'description' => "DeMenna Cranes provides the most flexible crane fleets in Australia. With over 50 years industry experience DeMenna Cranes brings an unmatched service to any projects"
+					);
+					
+		$this->load->view('common/header',$header);
 		$this->load->view('home');
 		$this->load->view('common/footer');
 	}
 	
 	function about()
 	{
-		$this->load->view('common/header');
+		$header = array(
+						'title' => "About DeMenna Cranes",
+						'description' => "At DeMenna Cranes we pride ourselves on our skill, punctuality and reasonable rates. We are able to provide you with professional and reliable operators throughtout Australia"
+					);
+					
+		$this->load->view('common/header',$header);
 		$this->load->view('about');
 		$this->load->view('common/footer');	
 	}
 	
 	function team()
 	{
-		$this->load->view('common/header');
+		$header = array(
+						'title' => "Meet The DeMenna Team",
+						'description' => "DeMenna Cranes has a diverse well trained workforce with specialist in all areas of heavy lifting, earth moving, road and rail construction and engineering disciplines."
+					);
+					
+		$this->load->view('common/header',$header);
 		$this->load->view('team');
 		$this->load->view('common/footer');		
 	}
 	
 	function fleet($slug = "")
 	{
-		$this->load->view('common/header');
+		$data['fleet'] = $this->data_model->get_fleet();
+		$view = 'list';
+		$title = "Our Fleet - Trucks, Cranes & Accessories";
+		$description = "DeMenna Cranes extensive Crane Trucks/High Rail Crane Trucks Fleet has the perfect rig and team for every project";
 		
 		if($slug){
+			$view = 'detail';
 			$data['fleet'] = $this->data_model->get_fleet($slug);
-			$data['next'] = $this->data_model->get_next_fleet_key($slug);
-			$this->load->view('fleet/detail',$data);
-		}else{
-			$data['fleet'] = $this->data_model->get_fleet();
-			$this->load->view('fleet/list',$data);
+			$data['next'] = $this->data_model->get_next_fleet_key($slug);	
+			
+			$title = $data['fleet']['name'];
+			$description = implode(". ",$data['fleet']['specs']);
 		}
+		
+		$header = array(
+						'title' => $title,
+						'description' => $description
+					);
+		
+		$this->load->view('common/header',$header);
+		$this->load->view('fleet/' . $view,$data);
 		$this->load->view('common/footer');	
 	}
 	
 	function services()
 	{
-		$this->load->view('common/header');
+		$header = array(
+						'title' => "Rail Services & Constructions",
+						'description' => "DeMenna Cranes has been providing Crane trucks, heavy haulage and personnel in the construction industry since 1990, servicing everyone from the smallest job to multi billion dollar jobs throughout Victoria and Australia."
+					);
+		
+		$this->load->view('common/header',$header);
 		$this->load->view('services');
 		$this->load->view('common/footer');		
 	}
 	
 	function projects()
 	{
+		$header = array(
+						'title' => "DeMenna Cranes Projects",
+						'description' => "DeMenna Cranes has been involved in multi billion dollar projects throughout Australia providing experience & reliability where it matters"
+					);
+		
 		$data['projects'] = $this->data_model->get_projects();
 		$data['total'] = count($data['projects']);
-		$this->load->view('common/header');
+		$this->load->view('common/header',$header);
 		$this->load->view('projects',$data);
 		$this->load->view('common/footer');		
 	}
 	
 	function contact()
 	{
+		$header = array(
+						'title' => "Contact DeMenna Cranes",
+						'description' => "Contact DeMenna Cranes anytime to discuss your project needs and for more information on our world class Crane Trucks/High Rail Crane Trucks Fleet"
+					);
+					
 		$data['captcha'] = $this->generate_captcha();
-		$this->load->view('common/header');
+		$this->load->view('common/header',$header);
 		$this->load->view('contact',$data);
 		$this->load->view('common/footer');		
 	}
@@ -96,7 +137,11 @@ class Content extends CI_Controller {
 	
 	function app_404()
 	{
-		$this->load->view('common/header');
+		$header = array(
+						'title' => '404 Page Not Found',
+						'description' => 'The page you are looking for does not exit.'
+					);
+		$this->load->view('common/header',$header);
 		$this->load->view('app_404');
 		$this->load->view('common/footer');		
 	}

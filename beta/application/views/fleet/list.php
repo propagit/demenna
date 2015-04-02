@@ -5,7 +5,7 @@
 <div class="container app-container remove-gutters">
 	<div class="col-xs-12 remove-gutters caption">
         <h3>
-        	Demenna Cranes extensive Crane Trucks/High Rail Crane Trucks Fleet<br>
+        	DeMenna Cranes extensive Crane Trucks/High Rail Crane Trucks Fleet<br>
             has the perfect rig and team for every project
 		</h3>
     </div>
