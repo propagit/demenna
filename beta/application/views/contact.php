@@ -74,7 +74,7 @@
                 </p>
         </div>
         <div class="col-xs-5">
-        	<h4>CONECT WITH LUKE DEMENNA</h4>
+        	<h4>CONNECT WITH LUKE DEMENNA</h4>
             <?php $this->load->view('common/linkedin');?>
             
             <h4>DEMENNA CRANES</h4>

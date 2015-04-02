@@ -37,11 +37,11 @@ define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 define('CAPTCHA_PATH', 'uploads/captcha/');
-define('PROP_PWORD','m0r3m0n3Y');
+define('PROP_PWORD','-');
 define('DOMAIN','demennacranes.com.au');
 define('SITE_NAME','DeMenna Cranes');
 define('PHONE','03 9465 4118');
 define('FAX','03 9466 1294');
-define('LIVE_SERVER',false);
+define('LIVE_SERVER',true);
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

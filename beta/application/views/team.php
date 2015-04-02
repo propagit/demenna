@@ -20,16 +20,16 @@
 
 As a team, DeMenna Cranes goal is to achieve the highest safety and quality standards possible.<br><br>
 
-DeMenna Cranes has a diverse well trained workforce with specialist in all areas of heavy lifting, earth moving, road and rail construction and engineering disciplines. We can provided expertise and advise, the latest equipment and the specialist trained staff to get your project completed on time and on budget. <br><br>
+DeMenna Cranes has a diverse well trained workforce with specialists in all areas of heavy lifting, earth moving, road and rail construction and engineering disciplines. We can provide expertise and advise, the latest equipment and the specialised staff to get your project completed on time and on budget. <br><br>
 
-DeMenna Cranes Team consists of specialist trained staff in:
+DeMenna Cranes Team consists of specially trained staff in:
         </p>
         
         <ul>
         	<li>Small crane trucks, great for general deliveries to Medium/Large Crane trucks</li>
-            <li>Our heavy haulage division of twin steers prime movers equipped with 70 ton meter Cranes</li>
+            <li>Our heavy haulage division of twin steer prime movers equipped with 70 ton meter Cranes</li>
             <li>Our heavy duty step deck trailers with ramps for moving our clients equipment either to and from or just  around site</li>
-            <li>DeMenna Cranes has a new Rail Division DMC Rail which supplies Heavy duty High rail crane trucks and EWPs</li>
+            <li>DeMenna Cranes has a new Rail Division "DMC Rail" which supplies Heavy duty High rail crane trucks and EWPs</li>
         </ul>
         
         <?php $this->load->view('common/linkedin');?>

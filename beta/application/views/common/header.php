@@ -34,7 +34,7 @@
                         <ul class="nav nav-pills nav-app push">
                             <li><a <?=$cur_page == '' ? 'class="active"' : '';?> href="<?=base_url();?>">Home</a></li>
                             <li><a <?=$cur_page == 'about' ? 'class="active"' : '';?> href="<?=base_url();?>about">About</a></li>
-                            <li><a <?=$cur_page == 'services' ? 'class="active"' : '';?> href="<?=base_url();?>services">Service</a></li>
+                            <li><a <?=$cur_page == 'services' ? 'class="active"' : '';?> href="<?=base_url();?>services">Services</a></li>
                         </ul>
                         <ul class="nav nav-pills nav-app pull">
                             <li><a <?=$cur_page == 'fleet' ? 'class="active"' : '';?> href="<?=base_url();?>fleet">Fleet</a></li>
