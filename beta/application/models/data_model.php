@@ -93,6 +93,26 @@ class Data_model extends CI_Model {
 							
 					),
 					
+					"hino-hi-rail-crane-with-carrying-frame" => 
+					array("image" => "hino_hi_rail.jpg","name" => "Hino Hi rail crane ruck with carrying frame", "short_name" => "Hino Hi Rail Crane Truck", "load_capacity" => "7 tons",
+							"specs" =>
+								array(
+										"Hi rail machine (broad and standard gage)",
+										"12 ton meter crane",
+										"Carrying capacity 7 tons",
+										"Weight of vehicle 16 tons",
+										"Tray length 6.3 meters",
+										"Available for interstate work",
+										"2 x wire drum carriers",
+										"Carrying frame capable of carrying 25 meter steel beams on track"
+									),
+
+							"desc" => ""	,
+							"gallery" => "",		
+													
+							
+					),
+					
 					"isuzu-1400-hmf-1720-k4" => 
 					array("image" => "truck4.jpg","name" => "Isuzu 1400 Fitted with HMF 1720 K4", "short_name" => "Isuzu 1400 HMF 1720", "load_capacity" => "10 tons",
 							"specs" =>
@@ -126,7 +146,7 @@ class Data_model extends CI_Model {
 							
 					),
 					
-					"Volvo-fm-450-semi-hmf-3000-k5" => 
+					"volvo-fm-450-semi-hmf-3000-k5" => 
 					array("image" => "truck8.jpg","name" => "Volvo FM 450 Semi Fitted with HMF 3000 K5", "short_name" => "Volvo FM 450 semi", "load_capacity" => "20 tons",
 							"specs" =>
 								array(
@@ -143,7 +163,7 @@ class Data_model extends CI_Model {
 							
 					),
 					
-					"Volvo-fm-500-twin-steer-semi-hmf-odin-k6" => 
+					"volvo-fm-500-twin-steer-semi-hmf-odin-k6" => 
 					array("image" => "truck1.jpg","name" => "Volvo FM 500 twin steer Semi Fitted with HMF Odin K6 (65 ton meters)", "short_name" => "Volvo FM 500 semi", "load_capacity" => "20 tons",
 							"specs" =>
 								array(
@@ -160,7 +180,7 @@ class Data_model extends CI_Model {
 							
 					),
 					
-					"Volvo-fe-hmf-1560-k5" => 
+					"volvo-fe-hmf-1560-k5" => 
 					array("image" => "truck9.jpg","name" => "Volvo FE fitted with HMF 1560 K5", "short_name" => "Volvo FE HMF 1560", "load_capacity" => "10 tons",
 							"specs" =>
 								array(
@@ -204,7 +224,8 @@ class Data_model extends CI_Model {
 
 							"desc" => ""	,
 							"gallery" => array(
-												"rail_trailer.jpg"
+												"rail_trailer.jpg",
+												"rail_trailer_3.jpg"
 												)		
 													
 							
@@ -234,7 +255,11 @@ class Data_model extends CI_Model {
 		
 		
 		if($key){
-			return $fleet[$key];	
+			# check array key exists
+			if(array_key_exists($key,$fleet)){
+				return $fleet[$key];	
+			}
+			return false;
 		}
 		return $fleet;
 		
@@ -319,7 +344,11 @@ class Data_model extends CI_Model {
 		);	
 		
 		if($key){
-			return $projects[$key];	
+			# check if key exists
+			if(array_key_exists($key,$projects)){
+				return $projects[$key];	
+			}
+			return false;
 		}
 		return $projects;
 	}

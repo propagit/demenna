@@ -1,6 +1,6 @@
 
 <div class="container center offset-top secondary-banner">
-	<img src="<?=base_url();?>assets/img/about_banner.png">
+	
 </div>
 
 <div class="container app-container remove-gutters">

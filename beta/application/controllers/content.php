@@ -54,6 +54,9 @@ class Content extends CI_Controller {
 		if($slug){
 			$view = 'detail';
 			$data['fleet'] = $this->data_model->get_fleet($slug);
+			if(!$data['fleet']){
+				redirect('app_404');
+			}
 			$data['next'] = $this->data_model->get_next_fleet_key($slug);	
 			
 			$title = $data['fleet']['name'];
