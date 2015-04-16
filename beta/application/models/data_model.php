@@ -214,7 +214,7 @@ class Data_model extends CI_Model {
 					),
 					
 					"rail-trailer" => 
-					array("image" => "rail_trailer_2.jpg","name" => "Rail Trailer", "short_name" => "Rail Trailer", "load_capacity" => "15 tons",
+					array("image" => "rail_trailer_3.jpg","name" => "Rail Trailer", "short_name" => "Rail Trailer", "load_capacity" => "15 tons",
 							"specs" =>
 								array(
 										"Carrying capacity 15 tons on track",
@@ -225,7 +225,7 @@ class Data_model extends CI_Model {
 							"desc" => ""	,
 							"gallery" => array(
 												"rail_trailer.jpg",
-												"rail_trailer_3.jpg"
+												"rail_trailer_2.jpg"
 												)		
 													
 							
