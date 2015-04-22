@@ -1,4 +1,6 @@
-/* Scss Document */
+/* Scss Document 
+   author: kaushtuvgurung@gmail.com
+*/
 @import url(../bootstrap/css/bootstrap.min.css);
 @import url(../font-awesome/css/font-awesome.min.css);
 @import url(../lightbox/css/lightbox.css);
@@ -538,6 +540,16 @@ hr {
   text-align: center;
   font-size: 12px;
   padding-top: 10px; }
+#footer .social {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px; }
+  #footer .social span {
+    padding-right: 10px; }
+  #footer .social a {
+    padding-left: 4px;
+    font-size: 14px; }
 
 /*
 	Responsive 

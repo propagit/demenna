@@ -43,5 +43,9 @@ define('SITE_NAME','DeMenna Cranes');
 define('PHONE','03 9465 4118');
 define('FAX','03 9466 1294');
 define('LIVE_SERVER',true);
+
+define('FACEBOOK','https://www.facebook.com/pages/DeMenna-Cranes/248101688541233');
+define('LINKEDIN','https://au.linkedin.com/pub/luke-demenna/66/246/380');
+
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

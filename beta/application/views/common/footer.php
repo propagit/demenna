@@ -23,6 +23,11 @@
                 </div>
                 <div class="footer-box pull remove-rt-gutter">
                 	<img class="pull" src="<?=base_url();?>assets/img/core/footerRaleLogo.jpg">
+                    <div class="social">
+                    	<span>connect with us </span>
+                        <a href="<?=FACEBOOK;?>" target="_blank"><i class="fa fa-facebook-square"></i></a> 
+                        <a href="<?=LINKEDIN;?>" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
                 </div>
                 
                 <hr>
