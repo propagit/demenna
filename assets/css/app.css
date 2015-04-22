@@ -544,12 +544,14 @@ hr {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
-  line-height: 24px; }
+  line-height: 42px;
+  text-align: right; }
   #footer .social span {
     padding-right: 10px; }
   #footer .social a {
     padding-left: 4px;
-    font-size: 14px; }
+    font-size: 14px;
+    font-size: 22px; }
 
 /*
 	Responsive 
