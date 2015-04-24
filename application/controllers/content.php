@@ -11,8 +11,8 @@ class Content extends CI_Controller {
 	function index()
 	{
 		$header = array(
-						'title' => "DeMenna Cranes - Mobile Crane Hire",
-						'description' => "DeMenna Cranes provides the most flexible crane fleets in Australia. With over 50 years industry experience DeMenna Cranes brings an unmatched service to any projects"
+						'title' => "High Rail Crane Truck Hire and Heavy Haulage Hire - Melbourne",
+						'description' => "Melbourne Crane Truck Hire Professionals - Rail Construction Experts Australia. Melbourne Dogman Riggers"
 					);
 					
 		$this->load->view('common/header',$header);
