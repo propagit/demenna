@@ -60,7 +60,7 @@ class Data_model extends CI_Model {
 					),
 					
 					"isuzu-1400-hmf-2820-k5" => 
-					array("image" => "truck4.jpg","name" => "Isuzu 1400 Fitted with HMF 2820 K5", "short_name" => "Isuzu 1400 HMF 2820", "load_capacity" => "7 tons",
+					array("image" => "isuzu_1400_2820.jpg","name" => "Isuzu 1400 Fitted with HMF 2820 K5", "short_name" => "Isuzu 1400 HMF 2820", "load_capacity" => "7 tons",
 							"specs" =>
 								array(
 										"Hi rail machine (board ans standard gage)",
@@ -295,27 +295,27 @@ class Data_model extends CI_Model {
 					
 				"present-regional-rail-link" => 
 					array("image" => "RegionalRailDuelLift.jpg","name" => "Present Regional Rail Link", "cost" => "$8.5 Billion", "year" => '2012 - Present',
-							"desc" => "Suppling High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Thiess /Balfour Beatty, John Holland/Abi Group and United Group.",	
+							"desc" => "Supplying High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Thiess /Balfour Beatty, John Holland/Abi Group and United Group.",	
 					),
 				
 				"springvale-road-grade-separation" => 
 					array("image" => "Springvale.jpg","name" => "Springvale Road Grade Separation", "cost" => "$300 Million", "year" => '2013 - 2014',
-							"desc" => "Suppling High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Balfour Beatty/Mc Connell Dowell",	
+							"desc" => "Supplying High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Balfour Beatty/Mc Connell Dowell",	
 					),
 					
 				"mitcham-rooks-road-grade-separation" => 
 					array("image" => "Mitchem.jpg","name" => "Mitcham Rooks Road Grade Separation", "cost" => "$192 Million", "year" => '2013 - 2014',
-							"desc" => "Suppling High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to John Holland",	
+							"desc" => "Supplying High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to John Holland",	
 					),
 				
 				"bald-hill-wind-farm" => 
 					array("image" => "windfarm.jpg","name" => "2014-Present Bald Hill Wind Farm", "cost" => "$300 Million", "year" => '2014 - Present ',
-							"desc" => "Suppling Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Hazel Brothers",	
+							"desc" => "Supplying Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Hazel Brothers",	
 					),
 					
 				"present-metro-train-brp-frankston-line" => 
 					array("image" => "frankston.jpg","name" => "Metro Train BRP Frankston Line", "cost" => "$300 Milion", "year" => '2015 - Present ',
-							"desc" => "Suppling OHLE Supervision, High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Metro Trains",	
+							"desc" => "Supplying OHLE Supervision, High Rail Crane Trucks, Crane Trucks, Crane Semis, Dogman/Riggers, Heavy Haulage to Metro Trains",	
 					),
 				
 				"john-holland-ringwood-station-upgrade" => 
