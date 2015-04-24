@@ -14,7 +14,7 @@ class Data_model extends CI_Model {
 								array(
 										"Carrying capacity 7 tons",
 										"Weight of vehicles 16 tons",
-										"Tray lenght 7.2 meters",
+										"Tray length 7.2 meters",
 										"Capable of pulling super dog trailer",
 										"Dog trailer 7.3 meters carry capacity 16 tons"
 									),
@@ -30,7 +30,7 @@ class Data_model extends CI_Model {
 								array(
 										"Carrying capacity 10 tons",
 										"Weight of vehicles 19 tons",
-										"Tray lenght 7.2 meters",
+										"Tray length 7.2 meters",
 										"Capable of pulling super dog trailer",
 										"Dog trailer 7.3 meters carry capacity 16 tons"
 									),
@@ -47,9 +47,9 @@ class Data_model extends CI_Model {
 								array(
 										"Carrying capacity 20 tons",
 										"Weight of vehicles 24 tons",
-										"Tray lenght 45 FT",
-										"Expendables available up to 27 meters",
-										"Overall Lenght 19 meters",
+										"Tray length 45 FT",
+										"Extendables available up to 27 meters",
+										"Overall length 19 meters",
 										"Interstate Transport"
 									),
 
@@ -63,10 +63,10 @@ class Data_model extends CI_Model {
 					array("image" => "isuzu_1400_2820.jpg","name" => "Isuzu 1400 Fitted with HMF 2820 K5", "short_name" => "Isuzu 1400 HMF 2820", "load_capacity" => "7 tons",
 							"specs" =>
 								array(
-										"Hi rail machine (board ans standard gage)",
+										"Hi rail machine (broad and standard gage)",
 										"Carrying capacity 7 tons",
 										"Weight of vehicle 16 tons",
-										"Tray lenght 7.3 meters",
+										"Tray length 7.3 meters",
 										"Available for interstate work"
 									),
 
@@ -135,8 +135,8 @@ class Data_model extends CI_Model {
 								array(
 										"Carrying capacity 20 tons",
 										"Weight of vehicle 24 tons",
-										"Trailer lenght 45 FT",
-										"Overall Lenght 19 meters",
+										"Trailer length 45 FT",
+										"Overall length 19 meters",
 										"Interstate Transport"
 									),
 
@@ -152,8 +152,8 @@ class Data_model extends CI_Model {
 								array(
 										"Carrying capacity 20 tons",
 										"Weight of vehicle 24 tons",
-										"Trailer lenght 45 FT",
-										"Overall Lenght 19 meters",
+										"Trailer length 45 FT",
+										"Overall length 19 meters",
 										"Interstate Transport"
 									),
 
@@ -170,7 +170,7 @@ class Data_model extends CI_Model {
 										"Carrying capacity 20 tons",
 										"Weight of vehicle 31 tons",
 										"Step deck 45ft trailer with hydraulic ramps",
-										"Overall lenght 20 meters",
+										"Overall length 20 meters",
 										"Interstate Transport"
 									),
 
