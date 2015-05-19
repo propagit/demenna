@@ -18,7 +18,7 @@
                       <li><i class="fa-li fa fa-mobile"></i> <span>MOBILE</span> (04) 2350 0939</li>
                       <li><i class="fa-li fa fa-phone"></i> <span>PHONE</span> (03) 9465 4118</li>
                       <li><i class="fa-li fa fa-print"></i> <span>FAX</span> (03) 9466 1294</li>
-                      <li><i class="fa-li fa fa-envelope-o"></i> <span>EMAIL</span> info@demennacranes.com.au</li>
+                      <li><i class="fa-li fa fa-envelope-o"></i> <span>EMAIL</span> <a href="mailto:info@demennacranes.com.au">info@demennacranes.com.au</a></li>
                       <li><i class="fa-li fa fa-briefcase"></i> <span>ABN</span> 52 891 034 220</li>
                     </ul>
                 </div>

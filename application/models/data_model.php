@@ -94,11 +94,11 @@ class Data_model extends CI_Model {
 					),
 					
 					"hino-hi-rail-crane-with-carrying-frame" => 
-					array("image" => "hino_hi_rail.jpg","name" => "Hino Hi rail crane ruck with carrying frame", "short_name" => "Hino Hi Rail Crane Truck", "load_capacity" => "7 tons",
+					array("image" => "hino_hi_rail.jpg","name" => "Hino Hi rail crane truck with carrying frame", "short_name" => "Hino Hi Rail Crane Truck", "load_capacity" => "7 tons",
 							"specs" =>
 								array(
 										"Hi rail machine (broad and standard gage)",
-										"12 ton meter crane",
+										"26 ton meter crane",
 										"Carrying capacity 7 tons",
 										"Weight of vehicle 16 tons",
 										"Tray length 6.3 meters",
